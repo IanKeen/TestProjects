@@ -9,12 +9,14 @@
 import UIKit
 import MapKit
 
-typealias MapViewDidUpdate = (mapView: MKMapView) -> Void
+protocol MapViewControllerProtocol {
+    func mapViewDidUpdate(mapView: MKMapView) -> Void
+}
 
 class MapViewController: UIViewController, MKMapViewDelegate {
-    var mapViewDidUpdate: MapViewDidUpdate?
+    var delegate: MapViewControllerProtocol?
     
     func mapView(mapView: MKMapView!, regionDidChangeAnimated animated: Bool) {
-        self.mapViewDidUpdate?(mapView: mapView)
+        self.delegate?.mapViewDidUpdate(mapView)
     }
 }

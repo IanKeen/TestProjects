@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MapViewControllerProtocol {
     private var mapViewController: MapViewController?
     private var textViewController: TextViewController?
     
@@ -22,9 +22,10 @@ class ViewController: UIViewController {
         self.mapViewController = self.childViewControllers.filter({ $0 is MapViewController }).first as? MapViewController
         self.textViewController = self.childViewControllers.filter({ $0 is TextViewController }).first as? TextViewController
         
-        self.mapViewController?.mapViewDidUpdate = { mapView in
-            self.textViewController?.updateTextField("\(mapView.centerCoordinate.latitude),\(mapView.centerCoordinate.longitude)")
-        }
+        self.mapViewController?.delegate = self
+    }
+    func mapViewDidUpdate(mapView: MKMapView) {
+        self.textViewController?.updateTextField("\(mapView.centerCoordinate.latitude),\(mapView.centerCoordinate.longitude)")
     }
 }
 
