@@ -23,6 +23,8 @@
 		3264884D1B4C9D5F0091BA80 /* VCDashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326488431B4C9D5F0091BA80 /* VCDashboard.xib */; };
 		3264884E1B4C9D5F0091BA80 /* VCDashboardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 326488451B4C9D5F0091BA80 /* VCDashboardModel.m */; };
 		326488531B4CB0770091BA80 /* MyAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 326488521B4CB0770091BA80 /* MyAuth.m */; };
+		32FA18C11B96792F00E1A9D0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FA18BF1B96792F00E1A9D0 /* Parse.framework */; };
+		32FA18C21B96792F00E1A9D0 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FA18C01B96792F00E1A9D0 /* ParseFacebookUtilsV4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		326488511B4CB0770091BA80 /* MyAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAuth.h; sourceTree = "<group>"; };
 		326488521B4CB0770091BA80 /* MyAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAuth.m; sourceTree = "<group>"; };
 		32A26A581B4D8AD600FAB5E4 /* Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
+		32FA18BF1B96792F00E1A9D0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		32FA18C01B96792F00E1A9D0 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		431AE6133859686C66990298 /* libPods-ParseSessionExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseSessionExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D5AB6893CD3B175A32C6C0 /* Pods-ParseSessionExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseSessionExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseSessionExample/Pods-ParseSessionExample.release.xcconfig"; sourceTree = "<group>"; };
 		9451107C8CFD60669E6F046F /* Pods-ParseSessionExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseSessionExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseSessionExample/Pods-ParseSessionExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32FA18C11B96792F00E1A9D0 /* Parse.framework in Frameworks */,
 				2555A19E6A827A62AE1B5F76 /* libPods-ParseSessionExample.a in Frameworks */,
+				32FA18C21B96792F00E1A9D0 /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +98,8 @@
 		0F2867EB2424DE3A5D2B4682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32FA18BF1B96792F00E1A9D0 /* Parse.framework */,
+				32FA18C01B96792F00E1A9D0 /* ParseFacebookUtilsV4.framework */,
 				431AE6133859686C66990298 /* libPods-ParseSessionExample.a */,
 			);
 			name = Frameworks;

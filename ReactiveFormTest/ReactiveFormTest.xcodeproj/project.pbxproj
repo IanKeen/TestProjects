@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32F65B4D1BA21ECE00614E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65B4C1BA21ECE00614E7E /* AppDelegate.swift */; };
+		32F65B4F1BA21ECE00614E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65B4E1BA21ECE00614E7E /* ViewController.swift */; };
+		32F65B521BA21ECE00614E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F65B501BA21ECE00614E7E /* Main.storyboard */; };
+		32F65B541BA21ECE00614E7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F65B531BA21ECE00614E7E /* Images.xcassets */; };
+		32F65B571BA21ECE00614E7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F65B551BA21ECE00614E7E /* LaunchScreen.xib */; };
+		32F65B631BA21ECE00614E7E /* ReactiveFormTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65B621BA21ECE00614E7E /* ReactiveFormTestTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32F65B5D1BA21ECE00614E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F65B3F1BA21ECE00614E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F65B461BA21ECE00614E7E;
+			remoteInfo = ReactiveFormTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32F65B471BA21ECE00614E7E /* ReactiveFormTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveFormTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F65B4B1BA21ECE00614E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F65B4C1BA21ECE00614E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32F65B4E1BA21ECE00614E7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32F65B511BA21ECE00614E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32F65B531BA21ECE00614E7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32F65B561BA21ECE00614E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32F65B5C1BA21ECE00614E7E /* ReactiveFormTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveFormTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F65B611BA21ECE00614E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F65B621BA21ECE00614E7E /* ReactiveFormTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveFormTestTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F65B441BA21ECE00614E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F65B591BA21ECE00614E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F65B3E1BA21ECE00614E7E = {
+			isa = PBXGroup;
+			children = (
+				32F65B491BA21ECE00614E7E /* ReactiveFormTest */,
+				32F65B5F1BA21ECE00614E7E /* ReactiveFormTestTests */,
+				32F65B481BA21ECE00614E7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32F65B481BA21ECE00614E7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32F65B471BA21ECE00614E7E /* ReactiveFormTest.app */,
+				32F65B5C1BA21ECE00614E7E /* ReactiveFormTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F65B491BA21ECE00614E7E /* ReactiveFormTest */ = {
+			isa = PBXGroup;
+			children = (
+				32F65B4C1BA21ECE00614E7E /* AppDelegate.swift */,
+				32F65B4E1BA21ECE00614E7E /* ViewController.swift */,
+				32F65B501BA21ECE00614E7E /* Main.storyboard */,
+				32F65B531BA21ECE00614E7E /* Images.xcassets */,
+				32F65B551BA21ECE00614E7E /* LaunchScreen.xib */,
+				32F65B4A1BA21ECE00614E7E /* Supporting Files */,
+			);
+			path = ReactiveFormTest;
+			sourceTree = "<group>";
+		};
+		32F65B4A1BA21ECE00614E7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F65B4B1BA21ECE00614E7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F65B5F1BA21ECE00614E7E /* ReactiveFormTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				32F65B621BA21ECE00614E7E /* ReactiveFormTestTests.swift */,
+				32F65B601BA21ECE00614E7E /* Supporting Files */,
+			);
+			path = ReactiveFormTestTests;
+			sourceTree = "<group>";
+		};
+		32F65B601BA21ECE00614E7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F65B611BA21ECE00614E7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32F65B461BA21ECE00614E7E /* ReactiveFormTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F65B661BA21ECE00614E7E /* Build configuration list for PBXNativeTarget "ReactiveFormTest" */;
+			buildPhases = (
+				32F65B431BA21ECE00614E7E /* Sources */,
+				32F65B441BA21ECE00614E7E /* Frameworks */,
+				32F65B451BA21ECE00614E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveFormTest;
+			productName = ReactiveFormTest;
+			productReference = 32F65B471BA21ECE00614E7E /* ReactiveFormTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32F65B5B1BA21ECE00614E7E /* ReactiveFormTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F65B691BA21ECE00614E7E /* Build configuration list for PBXNativeTarget "ReactiveFormTestTests" */;
+			buildPhases = (
+				32F65B581BA21ECE00614E7E /* Sources */,
+				32F65B591BA21ECE00614E7E /* Frameworks */,
+				32F65B5A1BA21ECE00614E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F65B5E1BA21ECE00614E7E /* PBXTargetDependency */,
+			);
+			name = ReactiveFormTestTests;
+			productName = ReactiveFormTestTests;
+			productReference = 32F65B5C1BA21ECE00614E7E /* ReactiveFormTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32F65B3F1BA21ECE00614E7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Mustard;
+				TargetAttributes = {
+					32F65B461BA21ECE00614E7E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					32F65B5B1BA21ECE00614E7E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 32F65B461BA21ECE00614E7E;
+					};
+				};
+			};
+			buildConfigurationList = 32F65B421BA21ECE00614E7E /* Build configuration list for PBXProject "ReactiveFormTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32F65B3E1BA21ECE00614E7E;
+			productRefGroup = 32F65B481BA21ECE00614E7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32F65B461BA21ECE00614E7E /* ReactiveFormTest */,
+				32F65B5B1BA21ECE00614E7E /* ReactiveFormTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F65B451BA21ECE00614E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F65B521BA21ECE00614E7E /* Main.storyboard in Resources */,
+				32F65B571BA21ECE00614E7E /* LaunchScreen.xib in Resources */,
+				32F65B541BA21ECE00614E7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F65B5A1BA21ECE00614E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F65B431BA21ECE00614E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F65B4F1BA21ECE00614E7E /* ViewController.swift in Sources */,
+				32F65B4D1BA21ECE00614E7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F65B581BA21ECE00614E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F65B631BA21ECE00614E7E /* ReactiveFormTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32F65B5E1BA21ECE00614E7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F65B461BA21ECE00614E7E /* ReactiveFormTest */;
+			targetProxy = 32F65B5D1BA21ECE00614E7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32F65B501BA21ECE00614E7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F65B511BA21ECE00614E7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32F65B551BA21ECE00614E7E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F65B561BA21ECE00614E7E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32F65B641BA21ECE00614E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32F65B651BA21ECE00614E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F65B671BA21ECE00614E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReactiveFormTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32F65B681BA21ECE00614E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReactiveFormTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32F65B6A1BA21ECE00614E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactiveFormTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveFormTest.app/ReactiveFormTest";
+			};
+			name = Debug;
+		};
+		32F65B6B1BA21ECE00614E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactiveFormTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveFormTest.app/ReactiveFormTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32F65B421BA21ECE00614E7E /* Build configuration list for PBXProject "ReactiveFormTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F65B641BA21ECE00614E7E /* Debug */,
+				32F65B651BA21ECE00614E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F65B661BA21ECE00614E7E /* Build configuration list for PBXNativeTarget "ReactiveFormTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F65B671BA21ECE00614E7E /* Debug */,
+				32F65B681BA21ECE00614E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32F65B691BA21ECE00614E7E /* Build configuration list for PBXNativeTarget "ReactiveFormTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F65B6A1BA21ECE00614E7E /* Debug */,
+				32F65B6B1BA21ECE00614E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32F65B3F1BA21ECE00614E7E /* Project object */;
+}
