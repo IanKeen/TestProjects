@@ -19,12 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let enabled = self.fields.reduce(true) { bool, field in
-            let length: Int
-            if (textField == field) {
-                length = count(field.text) + count(string) - range.length
-            } else {
-                length = count(field.text)
-            }
+            let length = count(field.text) + ((textField == field) ? count(string) - range.length : 0)
             return bool && (length >= self.textFieldLength)
         }
         self.button.enabled = enabled
