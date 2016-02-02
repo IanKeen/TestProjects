@@ -15,7 +15,7 @@ class ProgressView: UIView {
     var progressColor: UIColor = .redColor()
     var positionView: UIView = ProgressView.defaultPositionView()
     
-    var progress: CGFloat = 0.0 {
+    @IBInspectable var progress: CGFloat = 0.0 {
         didSet {
             if (self.progress < 0.0) { self.progress = 0.0 }
             else if (self.progress > 1.0) { self.progress = 1.0 }

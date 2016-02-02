@@ -50,14 +50,52 @@
                                     <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dE-S5-J3f"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-SK-amC">
+                                <rect key="frame" x="180" y="267" width="240" height="313"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="gnJ-GD-ISA"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgressCell" id="GRx-RQ-LbO">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GRx-RQ-LbO" id="dxK-7X-csc">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view tag="99" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2U-gc-1JV" customClass="ProgressView" customModule="ProgressTest" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="11" width="240" height="22.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22.5" id="SSv-ej-xAG"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="N2U-gc-1JV" firstAttribute="leading" secondItem="dxK-7X-csc" secondAttribute="leading" id="Oka-4i-Uq2"/>
+                                                <constraint firstAttribute="trailing" secondItem="N2U-gc-1JV" secondAttribute="trailing" id="reu-el-zwu"/>
+                                                <constraint firstItem="N2U-gc-1JV" firstAttribute="centerY" secondItem="dxK-7X-csc" secondAttribute="centerY" id="sDN-iJ-sO3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rMw-LC-qlg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gse-gp-D0s"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PAa-SK-amC" firstAttribute="top" secondItem="KC9-09-5y0" secondAttribute="bottom" constant="8" id="5q5-cX-FHq"/>
                             <constraint firstItem="LAv-c9-Vhf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ID-GF-Qj3"/>
                             <constraint firstItem="LAv-c9-Vhf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="AXf-sF-hnv"/>
                             <constraint firstItem="oY9-Vo-yzz" firstAttribute="top" secondItem="LAv-c9-Vhf" secondAttribute="bottom" constant="46" id="E6w-Go-2w9"/>
                             <constraint firstItem="KC9-09-5y0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JcS-0E-eiL"/>
                             <constraint firstItem="oY9-Vo-yzz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M2w-xC-Kzk"/>
+                            <constraint firstItem="PAa-SK-amC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vkn-ho-gom"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PAa-SK-amC" secondAttribute="bottom" constant="20" id="Xtw-Z3-TBb"/>
                             <constraint firstItem="KC9-09-5y0" firstAttribute="top" secondItem="oY9-Vo-yzz" secondAttribute="bottom" constant="48" id="dD8-F1-ARa"/>
                         </constraints>
                     </view>
