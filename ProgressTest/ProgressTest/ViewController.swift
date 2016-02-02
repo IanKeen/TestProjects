@@ -28,7 +28,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ProgressCell", forIndexPath: indexPath)
         if let progressView = cell.contentView.viewWithTag(99) as? ProgressView {
-            self.cellProgress = progressView
+            //self.cellProgress = progressView
+            progressView.progress = 0.8
         }
         return cell
     }
