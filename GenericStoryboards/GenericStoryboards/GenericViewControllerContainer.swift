@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GenericViewControllerContailer: UIViewController {
+class GenericViewControllerContainer: UIViewController {
     var genericViewController: UIViewController? {
         willSet {
             if let existing = self.genericViewController {

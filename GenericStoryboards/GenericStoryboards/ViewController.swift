@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: GenericViewControllerContailer {
+class ViewController: GenericViewControllerContainer {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.genericViewController = GenericViewController<String>()
