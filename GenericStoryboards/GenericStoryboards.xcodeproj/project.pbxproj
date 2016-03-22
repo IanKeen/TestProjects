@@ -13,6 +13,7 @@
 		32DF416E1CA1D88F00D7B64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DF416D1CA1D88F00D7B64E /* Assets.xcassets */; };
 		32DF41711CA1D88F00D7B64E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DF416F1CA1D88F00D7B64E /* LaunchScreen.storyboard */; };
 		32DF41791CA1D8BB00D7B64E /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF41781CA1D8BB00D7B64E /* GenericViewController.swift */; };
+		32DF417B1CA1DFC000D7B64E /* GenericViewControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF417A1CA1DFC000D7B64E /* GenericViewControllerContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32DF41701CA1D88F00D7B64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32DF41721CA1D88F00D7B64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32DF41781CA1D8BB00D7B64E /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		32DF417A1CA1DFC000D7B64E /* GenericViewControllerContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewControllerContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				32DF41661CA1D88F00D7B64E /* AppDelegate.swift */,
+				32DF417A1CA1DFC000D7B64E /* GenericViewControllerContainer.swift */,
 				32DF41781CA1D8BB00D7B64E /* GenericViewController.swift */,
 				32DF41681CA1D88F00D7B64E /* ViewController.swift */,
 				32DF416A1CA1D88F00D7B64E /* Main.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				32DF41791CA1D8BB00D7B64E /* GenericViewController.swift in Sources */,
 				32DF41691CA1D88F00D7B64E /* ViewController.swift in Sources */,
+				32DF417B1CA1DFC000D7B64E /* GenericViewControllerContainer.swift in Sources */,
 				32DF41671CA1D88F00D7B64E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +292,7 @@
 				32DF41771CA1D88F00D7B64E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
