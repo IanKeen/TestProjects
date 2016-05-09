@@ -162,6 +162,7 @@
 		320DE3FC1B716F12002236D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Mustard;
 				TargetAttributes = {
@@ -419,6 +420,7 @@
 				320DE4251B716F12002236D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		320DE4261B716F12002236D7 /* Build configuration list for PBXNativeTarget "DecoupledSeguesTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +429,7 @@
 				320DE4281B716F12002236D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
