@@ -32,12 +32,5 @@ class ViewController: UIViewController {
         c3.title.text = "foo"
         c3.subtitle.text = "bar baz"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
