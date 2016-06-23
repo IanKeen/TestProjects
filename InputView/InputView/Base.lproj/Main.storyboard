@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InputView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZL-e6-EYq">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nZL-e6-EYq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GC7-AT-7Sh"/>
+                            <constraint firstItem="nZL-e6-EYq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="X0k-Xy-ioy"/>
+                            <constraint firstItem="nZL-e6-EYq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eOG-3F-aEa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customInputView" destination="215-Rl-T54" id="IOS-Op-l00"/>
+                        <outlet property="textInput" destination="nZL-e6-EYq" id="bPR-4y-cjH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="215-Rl-T54">
+                    <rect key="frame" x="0.0" y="0.0" width="444" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBJ-99-LPO">
+                            <rect key="frame" x="8" y="8" width="210" height="112"/>
+                            <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Foo">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="fooPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="9eQ-Ik-qr8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5D-Cv-Etr">
+                            <rect key="frame" x="226" y="8" width="210" height="112"/>
+                            <color key="backgroundColor" red="1" green="0.71594366779999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Bar">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="barPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svl-WY-gdK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="x5D-Cv-Etr" secondAttribute="bottom" constant="8" id="4iG-jn-2cF"/>
+                        <constraint firstItem="CBJ-99-LPO" firstAttribute="leading" secondItem="215-Rl-T54" secondAttribute="leading" constant="8" id="ADh-bT-XBN"/>
+                        <constraint firstAttribute="bottom" secondItem="CBJ-99-LPO" secondAttribute="bottom" constant="8" id="NLp-9c-c2V"/>
+                        <constraint firstItem="x5D-Cv-Etr" firstAttribute="width" secondItem="CBJ-99-LPO" secondAttribute="width" id="QEX-5d-lS6"/>
+                        <constraint firstItem="x5D-Cv-Etr" firstAttribute="top" secondItem="215-Rl-T54" secondAttribute="top" constant="8" id="cET-vg-lHK"/>
+                        <constraint firstItem="x5D-Cv-Etr" firstAttribute="leading" secondItem="CBJ-99-LPO" secondAttribute="trailing" constant="8" id="cO9-ak-o30"/>
+                        <constraint firstAttribute="trailing" secondItem="x5D-Cv-Etr" secondAttribute="trailing" constant="8" id="iyi-xd-PBe"/>
+                        <constraint firstItem="CBJ-99-LPO" firstAttribute="top" secondItem="215-Rl-T54" secondAttribute="top" constant="8" id="tsQ-Ax-pih"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="280" y="337"/>
+        </scene>
+    </scenes>
+</document>
