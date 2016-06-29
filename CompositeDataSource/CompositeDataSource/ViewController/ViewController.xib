@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="CompositeDataSource" customModuleProvider="target">
+            <connections>
+                <outlet property="spinner" destination="iGV-Vh-fSq" id="1DC-OA-sHC"/>
+                <outlet property="tableView" destination="hjm-b1-G0l" id="EyI-f7-OTc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hjm-b1-G0l">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iGV-Vh-fSq">
+                    <rect key="frame" x="282" y="281" width="37" height="37"/>
+                    <color key="color" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hjm-b1-G0l" secondAttribute="trailing" id="AHR-FW-cuL"/>
+                <constraint firstAttribute="bottom" secondItem="hjm-b1-G0l" secondAttribute="bottom" id="L4a-QK-iDa"/>
+                <constraint firstItem="iGV-Vh-fSq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="X17-CE-sIE"/>
+                <constraint firstItem="iGV-Vh-fSq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g95-XS-KyA"/>
+                <constraint firstItem="hjm-b1-G0l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ngP-t5-7Cv"/>
+                <constraint firstItem="hjm-b1-G0l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nqb-Db-9SA"/>
+            </constraints>
+            <point key="canvasLocation" x="345" y="349"/>
+        </view>
+    </objects>
+</document>
