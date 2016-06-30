@@ -12,9 +12,6 @@ class ViewModel {
     //MARK: - Private Properties
     private let api: API
     
-    //MARK: - Public Properties
-    let cellRepresentables: [CellRepresentable.Type] = [SectionOne.self, SectionTwo.self]
-    
     //MARK: - Lifecycle
     init(api: API) {
         self.api = api

@@ -23,11 +23,8 @@ class SectionTwo: SectionBase {
         )
     }
     
-    //MARK: - CellRepresentable
-    override class func registerCellWithTableView(tableView: UITableView) {
-        tableView.registerNib(UINib(nibName: String(CellTwo), bundle: nil), forCellReuseIdentifier: String(CellTwo))
-    }
-    override func dequeueCell(tableView: UITableView, indexPath: NSIndexPath) -> UITableViewCell {
+    //MARK: - DataSource
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         guard
             let cell = tableView.dequeueReusableCellWithIdentifier(String(CellTwo), forIndexPath: indexPath) as? CellTwo
             where self.data.indices ~= indexPath.row
@@ -36,8 +33,5 @@ class SectionTwo: SectionBase {
         let friend = self.data[indexPath.row]
         cell.setup(friend)
         return cell
-    }
-    override func cellSelected() {
-        //..
     }
 }

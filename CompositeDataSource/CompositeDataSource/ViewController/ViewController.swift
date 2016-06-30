@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     //MARK: - Private
     private var viewModel: ViewModel!
+    
+    /// !!
+    /// Here we create the data source that will aggregate the child data sources and drive the table
     lazy var dataSource: CompositeTableViewDataSource = CompositeTableViewDataSource(
         dataSources: [
             SectionOne(viewModel: self.viewModel),
@@ -22,6 +25,7 @@ class ViewController: UIViewController {
         ],
         stateUpdated: self.tableStateUpdated
     )
+    ///
     
     //MARK: - Lifecycle
     convenience init(viewModel: ViewModel) {
@@ -43,9 +47,13 @@ class ViewController: UIViewController {
     
     //MARK: - TableView
     private func configureTableView() {
-        self.viewModel.cellRepresentables.forEach { $0.registerCell(self.tableView) }
+        self.tableView.registerNib(UINib(nibName: String(CellOne), bundle: nil), forCellReuseIdentifier: String(CellOne))
+        self.tableView.registerNib(UINib(nibName: String(CellTwo), bundle: nil), forCellReuseIdentifier: String(CellTwo))
         self.tableView.dataSource = self.dataSource
     }
+    
+    /// !!
+    /// Here we react to the aggregate state change
     private func tableStateUpdated(state: CompositeDataSourceState) {
         print("DataSource State: \(state)")
         self.spinner.stopAnimating()
@@ -61,6 +69,8 @@ class ViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
+    ///
+    
     @objc private func reloadData() {
         self.dataSource.reloadData()
     }

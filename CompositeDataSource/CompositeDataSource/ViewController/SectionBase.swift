@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SectionBase: NSObject, CompositeTableViewDataSourceSection, CellRepresentable {
+class SectionBase: NSObject, CompositeTableViewDataSourceSection {
     //MARK: - Internal Properties
     internal let viewModel: ViewModel
     internal var data = [Friend]()
@@ -35,20 +35,6 @@ class SectionBase: NSObject, CompositeTableViewDataSourceSection, CellRepresenta
         return self.data.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return self.dequeueCell(tableView, indexPath: indexPath)
-    }
-    
-    //MARK: - CellRepresentable
-    class func registerCellWithTableView(tableView: UITableView) {
-        fatalError("Must Override")
-    }
-    static func registerCell(tableView: UITableView) {
-        self.registerCellWithTableView(tableView) //we chain here because the protocol method is `static` rather than `class` :(
-    }
-    func dequeueCell(tableView: UITableView, indexPath: NSIndexPath) -> UITableViewCell {
-        fatalError("Must Override")
-    }
-    func cellSelected() {
         fatalError("Must Override")
     }
 }

@@ -30,7 +30,6 @@
 		32BD34001D2436D00049BB14 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD33FF1D2436D00049BB14 /* ViewModel.swift */; };
 		32BD34021D2436DD0049BB14 /* SectionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD34011D2436DD0049BB14 /* SectionOne.swift */; };
 		32BD34041D2436E40049BB14 /* SectionTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD34031D2436E40049BB14 /* SectionTwo.swift */; };
-		32BD34061D2437EB0049BB14 /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD34051D2437EB0049BB14 /* CellRepresentable.swift */; };
 		32BD340A1D2442610049BB14 /* SectionBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD34091D2442610049BB14 /* SectionBase.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		32BD33FF1D2436D00049BB14 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		32BD34011D2436DD0049BB14 /* SectionOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionOne.swift; sourceTree = "<group>"; };
 		32BD34031D2436E40049BB14 /* SectionTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionTwo.swift; sourceTree = "<group>"; };
-		32BD34051D2437EB0049BB14 /* CellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
 		32BD34091D2442610049BB14 /* SectionBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +100,6 @@
 				32BD33F11D2436C20049BB14 /* Cells */,
 				32BD33F61D2436C20049BB14 /* ViewController */,
 				32BD33B41D242B8A0049BB14 /* AppDelegate.swift */,
-				32BD34051D2437EB0049BB14 /* CellRepresentable.swift */,
 				32BD33BB1D242B8A0049BB14 /* Assets.xcassets */,
 				32BD33BD1D242B8A0049BB14 /* LaunchScreen.storyboard */,
 				32BD33C01D242B8A0049BB14 /* Info.plist */,
@@ -254,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				32BD33FD1D2436C20049BB14 /* ViewController.swift in Sources */,
-				32BD34061D2437EB0049BB14 /* CellRepresentable.swift in Sources */,
 				32BD33EC1D2436690049BB14 /* UIColor+Extensions.swift in Sources */,
 				32BD34021D2436DD0049BB14 /* SectionOne.swift in Sources */,
 				32BD33F01D2436970049BB14 /* CompositeDataSource.swift in Sources */,
@@ -414,6 +410,7 @@
 				32BD33C51D242B8A0049BB14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
