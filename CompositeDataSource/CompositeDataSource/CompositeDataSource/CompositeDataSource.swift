@@ -22,7 +22,7 @@ protocol CompositeTableViewDataSourceSection: UITableViewDataSource {
     func reloadData()
 }
 
-class CompositeTableViewDataSource: NSObject, UITableViewDataSource {
+final class CompositeTableViewDataSource: NSObject, UITableViewDataSource {
     //MARK: - Public Properties
     private(set) var state: CompositeDataSourceState = .Loading {
         didSet { self.stateUpdated(self.state) }
